@@ -1,0 +1,96 @@
+name: K-Essentials
+author: KingOfMars4
+main: me.kingofmars4.kessentials.Main
+version: 1.0
+api-version: 1.13
+description: Essentials remake by kingofmars4.
+prefix: K-Essentials
+
+commands:
+    essentials reload:
+        description: Reload the configuration section.
+        usage: /essentials reload
+    essentials:
+        description: Check the info about the plugin.
+        usage: /essentials    
+    gmc:
+        description: Change your gamemode to creative.
+        usage: /gmc (player)
+        aliases:
+            - gm1
+    gms:
+        description: Change your gamemode to survival.
+        usage: /gms {player}   
+        aliases:
+            - gm0     
+    gme:
+        description: Change your gamemode to spectator.
+        usage: /gme {player}   
+        aliases:
+            - gm3    
+    heal:
+        description: Completely heal and feed the player.
+        usage: /heal {player}     
+    feed:
+        description: Completely feed the player.
+        usage: /feed {player}         
+    fly:
+        description: Toggle flight mode.
+        usage: /fly        
+    timeset:
+        description: Set time to desired ticks.
+        usage: /timeset (ticks) {world}          
+    sun:
+        description: Set time on that world to day and clear.
+        usage: /sun {world}    
+    day:
+        description: Set time on that world to day.
+        usage: /day {world}         
+    night:
+        description: Set time on that world to night.
+        usage: /night {world}         
+    god:
+        description: Set the player mode to god.
+        usage: /god {player}      
+    tp:
+        description: Teleport to certain player.
+        usage: /tp (player) {player}       
+        
+permissions:
+  essentials.reload:
+    description: Reload the configuration section.
+    default: op    
+  essentials.gamemode:
+    description: Permission to use all commands related to gamemodes.
+    default: op    
+  essentials.gmc:
+    description: Access to /gme.
+    default: op        
+  essentials.gms:
+    description: Access to /gme.
+    default: op  
+  essentials.gme:
+    description: Access to /gme.
+    default: op      
+  essentials.info:
+    description: Check the info about the plugin.
+    default: op    
+  essentials.heal:
+    description: Access to /heal.
+    default: op 
+  essentials.feed:
+    description: Access to /feed.
+    default: op  
+  essentials.fly:
+    description: Access to /fly.
+    default: op      
+  essentials.time:
+    description: Access to all commands related to time.
+    default: op   
+  essentials.god:
+    description: Access to /tp.
+    default: op     
+  kessentials.tp:
+    description: Access to /god.
+    default: op        
+    
